@@ -1,4 +1,4 @@
-
+package main.java.classes.my_classes;
 
 /**
  * Created by Lemba on 10.08.2018.

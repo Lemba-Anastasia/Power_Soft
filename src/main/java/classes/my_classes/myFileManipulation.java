@@ -1,3 +1,5 @@
+package main.java.classes.my_classes;
+
 import java.io.*;
 
 /**
@@ -28,6 +30,7 @@ public class myFileManipulation {
         }
         return workerBase;
     }
+
     public int giveAnswer(WorkerBase wB){
         int answer=0;
         for(TimeWorker tW1 : wB.getWorkers()){

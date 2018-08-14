@@ -1,3 +1,5 @@
+package main.java.classes.my_classes;
+
 import org.omg.CORBA.PRIVATE_MEMBER;
 
 /**

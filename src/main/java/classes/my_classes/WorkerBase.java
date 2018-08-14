@@ -1,3 +1,5 @@
+package main.java.classes.my_classes;
+
 import java.util.ArrayList;
 import java.util.List;
 
