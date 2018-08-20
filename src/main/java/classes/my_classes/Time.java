@@ -12,11 +12,27 @@ public class Time {
         for(int i=0;i<s.length();i++){
             if(s.charAt(i)==':'){
                 this.hour=Integer.parseInt(s.substring(0,i));
-                //System.out.println("Часы:"+s.substring(0,i));
                 this.minute=Integer.parseInt(s.substring(i+1));
-                //System.out.println("Минуты:"+s.substring(i));
             }
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Time time = (Time) o;
+
+        if (hour != time.hour) return false;
+        return minute == time.minute;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = hour;
+        result = 31 * result + minute;
+        return result;
     }
 
     public int getHour() {
