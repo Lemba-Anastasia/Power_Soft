@@ -22,4 +22,3 @@ public class Main {
 
     }
 }
-//file:///E:/SnakeGame/main.html

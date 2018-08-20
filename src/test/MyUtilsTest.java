@@ -21,8 +21,12 @@ class MyUtilsTest {
     @BeforeEach
     void init(){
         workerBase = new ArrayList<>();
-        TimeWorker worker =new TimeWorker("08:00 09:07");
-        workerBase.add(worker);
+        TimeWorker worker1 =new TimeWorker("08:00 09:07");
+        workerBase.add(worker1);
+        TimeWorker worker2 =new TimeWorker("09:05 15:00");
+        workerBase.add(worker2);
+        TimeWorker worker3 =new TimeWorker("15:10 21:00");
+        workerBase.add(worker3);
     }
     @AfterEach
     void clear(){
@@ -40,7 +44,7 @@ class MyUtilsTest {
 
     @Test
     void giveAnswer() {
-        assertEquals(1,fileManipulation.giveAnswer(workerBase));
+        assertEquals(2,fileManipulation.giveAnswer(workerBase));
     }
 
 }
