@@ -4,9 +4,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Lemba on 10.08.2018.
- */
 public class MyUtils {
 
     public List<TimeWorker> readFile(String file) throws FileNotFoundException {
@@ -28,12 +25,13 @@ public class MyUtils {
         return workerList;
     }
 
+
     public int giveAnswer(List<TimeWorker> wB) {
         int answer = 0;
-        for (TimeWorker tW1 : wB) {
+        for (int i=0;i<wB.size();i++) {
             int count = 0;
-            for (TimeWorker tW2 : wB) {
-                if (comprasionTime(tW1, tW2)) {
+            for (int j=i;j<wB.size();j++) {
+                if (comprasionTime(wB.get(i), wB.get(j))) {
                     count++;
                 }
 

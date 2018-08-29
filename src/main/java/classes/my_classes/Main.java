@@ -1,12 +1,8 @@
 package main.java.classes.my_classes;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Lemba on 10.08.2018.
- */
 public class Main {
     public static void main(String[] args){
 
